@@ -1,0 +1,202 @@
+/* ===== Estilos generales ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: #0F1B2D;
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Logo (cuadrado verde + nombre) */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 36px;
+  height: 36px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+/* Boton verde principal */
+.boton {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1F8A4C;
+  color: #FFFFFF;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #176B3A;
+}
+
+/* Cajas de aviso */
+.aviso {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.aviso img {
+  width: 18px;
+  height: 18px;
+}
+
+.aviso-info {
+  background-color: #E3EDFD;
+  color: #1D5FD1;
+}
+
+.aviso-error {
+  background-color: #FDECEC;
+  color: #C62828;
+}
+
+/* Campos de formulario */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.campo-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid #CBD2DA;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.campo-input img {
+  width: 18px;
+  height: 18px;
+}
+
+.campo-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  color: #0F1B2D;
+}
+
+
+/* ===== Login ===== */
+
+.login {
+  display: flex;
+  min-height: 100vh;
+}
+
+.login-panel {
+  width: 600px;
+  flex-shrink: 0;
+  padding: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, rgba(15, 27, 45, 0) 40%, rgba(15, 27, 45, 0.9) 100%), url("../img/complejo-aconcagua.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+}
+
+.login-mensaje h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+
+.login-mensaje ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.login-mensaje li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #E6EBF1;
+}
+
+.login-mensaje li img {
+  width: 18px;
+  height: 18px;
+}
+
+.login-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.login-form h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.login-form .bajada {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4A5565;
+}
+
+.login-campos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
