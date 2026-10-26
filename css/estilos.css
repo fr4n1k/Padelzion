@@ -692,3 +692,100 @@ a {
   font-weight: 500;
   color: #667080;
 }
+
+
+/* ===== Paginas internas ===== */
+
+.fondo-gris {
+  background-color: #F6F7F9;
+}
+
+.contenido {
+  padding: 40px 80px 96px 80px;
+}
+
+.encabezado-pagina {
+  margin-bottom: 32px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: #667080;
+}
+
+.breadcrumb a:hover {
+  color: #1F8A4C;
+}
+
+.breadcrumb img {
+  width: 16px;
+  height: 16px;
+}
+
+.encabezado-pagina h1 {
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+.encabezado-pagina p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4A5565;
+}
+
+
+/* ===== Listado de complejos ===== */
+
+.filtros {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid #E3E7EC;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+}
+
+.filtros .campo {
+  flex: 1;
+}
+
+.filtros .boton-buscar {
+  padding: 0 20px;
+}
+
+.resultados-total {
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.grilla-complejos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.sin-resultados {
+  padding: 48px;
+  border: 1px solid #E3E7EC;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  text-align: center;
+  color: #4A5565;
+}
+
+.sin-resultados p {
+  margin-bottom: 16px;
+}
