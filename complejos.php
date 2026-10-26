@@ -11,7 +11,9 @@ if (isset($_GET["buscar"])) {
 
 $filtro = "%" . $buscar . "%";
 
-$sql = "SELECT * FROM complejos WHERE nombre LIKE ? ORDER BY id";
+$sql = "SELECT complejos.*, imagenes.archivo AS imagen FROM complejos
+        JOIN imagenes ON imagenes.complejo_id = complejos.id AND imagenes.portada = 1
+        WHERE complejos.nombre LIKE ? ORDER BY complejos.id";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $filtro);
 $stmt->execute();

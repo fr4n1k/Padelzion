@@ -4,7 +4,9 @@ include "config/conexion.php";
 
 $pagina = "inicio";
 
-$sql = "SELECT * FROM complejos LIMIT 3";
+$sql = "SELECT complejos.*, imagenes.archivo AS imagen FROM complejos
+        JOIN imagenes ON imagenes.complejo_id = complejos.id AND imagenes.portada = 1
+        ORDER BY complejos.id LIMIT 3";
 $complejos = $conn->query($sql);
 
 $sql = "SELECT COUNT(*) AS total FROM complejos";
