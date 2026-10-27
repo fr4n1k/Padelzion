@@ -200,3 +200,495 @@ a {
   flex-direction: column;
   gap: 16px;
 }
+
+/* Boton blanco con borde */
+.boton-borde {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid #CBD2DA;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #0F1B2D;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.boton-borde:hover {
+  border-color: #1F8A4C;
+}
+
+
+/* ===== Navbar ===== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  padding: 0 80px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E3E7EC;
+}
+
+.navbar-izquierda {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.navbar .logo {
+  color: #0F1B2D;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4A5565;
+}
+
+.navbar-links a:hover,
+.navbar-links a.activo {
+  color: #1F8A4C;
+  font-weight: 600;
+}
+
+/* Menu de usuario */
+.usuario {
+  position: relative;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.usuario-boton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.usuario-boton img {
+  width: 16px;
+  height: 16px;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #E7F4EC;
+  color: #176B3A;
+  font-weight: 600;
+}
+
+.usuario-menu {
+  display: none;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  width: 200px;
+  padding: 6px;
+  background-color: #FFFFFF;
+  border: 1px solid #E3E7EC;
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(15, 27, 45, 0.12);
+}
+
+.usuario:hover .usuario-menu {
+  display: block;
+}
+
+.usuario-menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 6px;
+  color: #C62828;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.usuario-menu a:hover {
+  background-color: #FDECEC;
+}
+
+.usuario-menu img {
+  width: 16px;
+  height: 16px;
+}
+
+
+/* ===== Footer ===== */
+
+.footer {
+  padding: 64px 80px 32px 80px;
+  background-color: #0F1B2D;
+}
+
+.footer p {
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #AEB8C6;
+}
+
+
+/* ===== Secciones ===== */
+
+.seccion {
+  padding: 96px 80px;
+}
+
+.seccion-gris {
+  background-color: #F6F7F9;
+}
+
+.seccion-encabezado {
+  width: 640px;
+  margin-bottom: 48px;
+}
+
+.overline {
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1F8A4C;
+}
+
+.seccion-encabezado h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+.seccion-encabezado .descripcion {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4A5565;
+}
+
+
+/* ===== Hero ===== */
+
+.hero {
+  height: 600px;
+  padding: 96px 80px 64px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, rgba(15, 27, 45, 0.97) 0%, rgba(15, 27, 45, 0.8) 50%, rgba(15, 27, 45, 0.35) 100%), url("../img/hero-landing.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-contenido {
+  width: 680px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  color: #FFFFFF;
+}
+
+.hero-contenido p {
+  width: 560px;
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #D3DAE4;
+}
+
+/* Buscador */
+.busqueda {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(15, 27, 45, 0.08), 0 16px 40px rgba(15, 27, 45, 0.14);
+}
+
+.busqueda .campo {
+  flex: 1;
+}
+
+.boton-buscar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1F8A4C;
+  color: #FFFFFF;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton-buscar:hover {
+  background-color: #176B3A;
+}
+
+.boton-buscar img {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* ===== Cards de complejos ===== */
+
+.grilla {
+  display: flex;
+  gap: 24px;
+}
+
+.card {
+  flex: 1;
+  overflow: hidden;
+  border: 1px solid #E3E7EC;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #0F1B2D;
+  box-shadow: 0 1px 2px rgba(15, 27, 45, 0.06), 0 4px 12px rgba(15, 27, 45, 0.06);
+}
+
+.card:hover {
+  border-color: #1F8A4C;
+  box-shadow: 0 4px 8px rgba(15, 27, 45, 0.08), 0 16px 40px rgba(15, 27, 45, 0.14);
+}
+
+.card-imagen {
+  position: relative;
+  height: 200px;
+}
+
+.card-imagen > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.etiqueta {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 26px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.95);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.etiqueta img {
+  width: 14px;
+  height: 14px;
+}
+
+.card-cuerpo {
+  padding: 20px;
+}
+
+.card-cuerpo h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.card-rasgos {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #4A5565;
+}
+
+.card-rasgos span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-rasgos img {
+  width: 16px;
+  height: 16px;
+}
+
+.card-pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #E3E7EC;
+}
+
+.card-desde {
+  font-size: 12px;
+  font-weight: 500;
+  color: #667080;
+}
+
+.card-precio {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-precio span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #667080;
+}
+
+.ver-todos {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.ver-todos .boton-borde {
+  padding: 12px 20px;
+}
+
+
+/* ===== Como funciona ===== */
+
+.pasos {
+  display: flex;
+  gap: 24px;
+}
+
+.paso {
+  flex: 1;
+  padding-top: 24px;
+  border-top: 2px solid #E3E7EC;
+}
+
+.paso-activo {
+  border-top-color: #1F8A4C;
+}
+
+.paso-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.paso-icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #E7F4EC;
+}
+
+.paso-icono img {
+  width: 24px;
+  height: 24px;
+}
+
+.paso-numero {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #CBD2DA;
+}
+
+.paso h3 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.paso p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4A5565;
+}
+
+
+/* ===== Testimonios ===== */
+
+.testimonios {
+  display: flex;
+  gap: 24px;
+}
+
+.testimonio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px;
+  border: 1px solid #E3E7EC;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.estrellas {
+  display: flex;
+  gap: 4px;
+}
+
+.estrellas img {
+  width: 18px;
+  height: 18px;
+}
+
+.cita {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.autor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.autor > img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.autor-nombre {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.autor-meta {
+  font-size: 12px;
+  font-weight: 500;
+  color: #667080;
+}

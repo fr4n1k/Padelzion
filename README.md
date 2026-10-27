@@ -8,7 +8,7 @@ Hecho con HTML, CSS y PHP con MySQL
 
 1. Copiar la carpeta dentro de `C:\xampp\htdocs\Padelzion2`.
 2. Prender Apache y MySQL desde el panel de XAMPP.
-3. Importar `database/padelzion2.sql` desde phpMyAdmin (crea la base `padelzion`).
+3. Correr el seed, que crea la base `padelzion`: `C:\xampp\php\php.exe database/seed.php`. También se puede abrir http://localhost/Padelzion/database/seed.php
 4. Entrar a http://localhost/Padelzion
 
 Usuario de prueba:

@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if ($usuario) {
     $_SESSION["usuario_id"] = $usuario["id"];
     $_SESSION["usuario_nombre"] = $usuario["nombre"] . " " . $usuario["apellido"];
+    $_SESSION["usuario_iniciales"] = mb_substr($usuario["nombre"], 0, 1) . mb_substr($usuario["apellido"], 0, 1);
     header("Location: index.php");
     exit;
   } else {
@@ -54,9 +55,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="login-mensaje">
         <h2>Más tiempo jugando, menos tiempo coordinando.</h2>
         <ul>
-          <li><img src="img/iconos/check-verde.png" alt=""> Turnos en tiempo real las 24 horas</li>
-          <li><img src="img/iconos/check-verde.png" alt=""> Pagás directo en el complejo</li>
-          <li><img src="img/iconos/check-verde.png" alt=""> Cancelación sin cargo hasta 24 hs antes</li>
+          <li><img src="img/iconos/check-verde.svg" alt=""> Turnos en tiempo real las 24 horas</li>
+          <li><img src="img/iconos/check-verde.svg" alt=""> Pagás directo en el complejo</li>
+          <li><img src="img/iconos/check-verde.svg" alt=""> Cancelación sin cargo hasta 24 hs antes</li>
         </ul>
       </div>
     </div>
@@ -70,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <div class="aviso aviso-info">
-          <img src="img/iconos/info-azul.png" alt="">
+          <img src="img/iconos/info-azul.svg" alt="">
           <p>Versión demo: ingresá con la cuenta franco.bollati@demo.com, ya cargada en el sistema.</p>
         </div>
 
@@ -84,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <div class="campo">
             <label for="email">Email</label>
             <div class="campo-input">
-              <img src="img/iconos/mail.png" alt="">
+              <img src="img/iconos/mail.svg" alt="">
               <input type="email" id="email" name="email" placeholder="tu@email.com" value="<?php echo htmlspecialchars($email); ?>" required>
             </div>
           </div>
@@ -92,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <div class="campo">
             <label for="password">Contraseña</label>
             <div class="campo-input">
-              <img src="img/iconos/candado.png" alt="">
+              <img src="img/iconos/candado.svg" alt="">
               <input type="password" id="password" name="password" placeholder="••••••••" required>
             </div>
           </div>
