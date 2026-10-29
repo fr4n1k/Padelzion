@@ -131,6 +131,14 @@ INSERT INTO reservas (usuario_id, cancha_id, fecha, hora, total) VALUES
 (2, 1, CURDATE(), '20:00', 42000),
 (2, 1, CURDATE(), '21:30', 42000);
 
+-- Reservas de Franco Bollati
+INSERT INTO reservas (usuario_id, cancha_id, fecha, hora, total, estado) VALUES
+(1, 1, CURDATE() + INTERVAL 3 DAY, '20:00', 42000, 'confirmada'),
+(1, 7, CURDATE() + INTERVAL 5 DAY, '18:30', 42000, 'confirmada'),
+(1, 10, CURDATE() - INTERVAL 4 DAY, '11:00', 39000, 'confirmada'),
+(1, 20, CURDATE() - INTERVAL 9 DAY, '20:00', 43500, 'confirmada'),
+(1, 3, CURDATE() + INTERVAL 2 DAY, '17:00', 33000, 'cancelada');
+
 -- Testimonios
 CREATE TABLE IF NOT EXISTS testimonios (
   id INT AUTO_INCREMENT PRIMARY KEY,
