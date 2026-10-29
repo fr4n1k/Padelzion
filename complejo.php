@@ -1,10 +1,9 @@
 <?php
 include "includes/sesion.php";
 include "config/conexion.php";
+include "includes/fechas.php";
 
 $pagina = "complejos";
-$horarios = ["11:00", "12:30", "14:00", "15:30", "17:00", "18:30", "20:00", "21:30"];
-$dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
 $iconosTipo = ["Panorámica" => "panoramica.svg", "Muro" => "muro.svg", "Normal" => "normal.svg"];
 
 function estaLibre($canchaId, $hora, $fecha, $ocupados) {

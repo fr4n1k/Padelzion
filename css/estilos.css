@@ -1170,3 +1170,396 @@ a.turno:hover {
   font-weight: 500;
   color: #667080;
 }
+
+
+/* ===== Confirmar reserva ===== */
+
+.confirmar-encabezado {
+  margin-bottom: 32px;
+}
+
+.confirmar-encabezado h1 {
+  margin-bottom: 4px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+.confirmar-encabezado p {
+  font-size: 14px;
+  color: #667080;
+}
+
+.confirmar-cuerpo {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.confirmar-principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Bloques numerados */
+.bloque {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid #E3E7EC;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.bloque-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bloque-top h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bloque-top p {
+  font-size: 14px;
+  color: #667080;
+}
+
+.bloque-numero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #0F1B2D;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+/* Revision */
+.revision {
+  border: 1px solid #E3E7EC;
+  border-radius: 8px;
+}
+
+.revision-fila {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #E3E7EC;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.revision-fila:last-child {
+  border-bottom: none;
+}
+
+.revision-label {
+  width: 160px;
+  font-weight: 500;
+  color: #667080;
+}
+
+.revision-valor {
+  flex: 1;
+}
+
+.revision-editar {
+  font-weight: 600;
+  color: #1F8A4C;
+}
+
+/* Pago */
+.pago-complejo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #E7F4EC;
+}
+
+.pago-icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.pago-icono img {
+  width: 20px;
+  height: 20px;
+}
+
+.pago-titulo {
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pago-texto {
+  font-size: 14px;
+  line-height: 1.45;
+  color: #4A5565;
+}
+
+.politica {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.politica input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  accent-color: #1F8A4C;
+  cursor: pointer;
+}
+
+/* Acciones */
+.confirmar-acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boton-volver {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+}
+
+.boton-volver img {
+  width: 18px;
+  height: 18px;
+}
+
+.boton-confirmar {
+  width: auto;
+  padding: 14px 24px;
+}
+
+/* Resumen */
+.resumen {
+  width: 380px;
+  overflow: hidden;
+  border: 1px solid #E3E7EC;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.resumen-foto {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.resumen-cuerpo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+
+.resumen-complejo {
+  margin-bottom: 6px;
+  color: #667080;
+}
+
+.resumen-cuerpo h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.resumen-filas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resumen-montos {
+  padding-top: 16px;
+  border-top: 1px solid #E3E7EC;
+}
+
+.resumen-fila {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #4A5565;
+}
+
+.resumen-fila strong {
+  font-weight: 500;
+  text-align: right;
+  color: #0F1B2D;
+}
+
+.resumen-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #E3E7EC;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.resumen-total strong {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.resumen-nota {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #DCF5E4;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.resumen-nota img {
+  width: 16px;
+  height: 16px;
+}
+
+
+/* ===== Reserva confirmada ===== */
+
+.confirmada {
+  display: flex;
+  justify-content: center;
+  padding: 48px 80px;
+}
+
+.confirmada-card {
+  width: 640px;
+  overflow: hidden;
+  border: 1px solid #E3E7EC;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.confirmada-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 40px 32px 40px;
+  background-color: #E7F4EC;
+  text-align: center;
+}
+
+.confirmada-icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #1F8A4C;
+}
+
+.confirmada-icono img {
+  width: 36px;
+  height: 36px;
+}
+
+.confirmada-top h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.confirmada-top > p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4A5565;
+}
+
+.codigo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border: 1px solid #1F8A4C;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+
+.codigo-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #667080;
+}
+
+.codigo-valor {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.boton-copiar {
+  display: flex;
+  padding: 4px;
+  border: none;
+  border-radius: 6px;
+  background: none;
+  cursor: pointer;
+}
+
+.boton-copiar:hover {
+  background-color: #E7F4EC;
+}
+
+.boton-copiar img {
+  width: 20px;
+  height: 20px;
+}
+
+.confirmada-detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px 40px;
+}
+
+.confirmada-acciones {
+  display: flex;
+  gap: 12px;
+  padding: 0 40px 32px 40px;
+}
+
+.confirmada-acciones a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 14px;
+}

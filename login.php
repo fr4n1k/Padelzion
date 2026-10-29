@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = $_POST["email"];
   $password = $_POST["password"];
 
-  $sql = "SELECT id, nombre, apellido FROM usuarios WHERE email = ? AND password = ?";
+  $sql = "SELECT id, nombre, apellido, email FROM usuarios WHERE email = ? AND password = ?";
   $stmt = $conn->prepare($sql);
   $stmt->bind_param("ss", $email, $password);
   $stmt->execute();
@@ -25,6 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION["usuario_id"] = $usuario["id"];
     $_SESSION["usuario_nombre"] = $usuario["nombre"] . " " . $usuario["apellido"];
     $_SESSION["usuario_iniciales"] = mb_substr($usuario["nombre"], 0, 1) . mb_substr($usuario["apellido"], 0, 1);
+    $_SESSION["usuario_email"] = $usuario["email"];
     header("Location: index.php");
     exit;
   } else {
