@@ -5,6 +5,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
   color: #0F1B2D;
@@ -336,6 +339,7 @@ a {
 /* ===== Footer ===== */
 
 .footer {
+  margin-top: auto;
   padding: 64px 80px 32px 80px;
   background-color: #0F1B2D;
 }
@@ -606,6 +610,7 @@ a {
 
 .paso-icono {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 48px;
@@ -1233,6 +1238,7 @@ a.turno:hover {
 
 .bloque-numero {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 28px;
@@ -1291,6 +1297,7 @@ a.turno:hover {
 
 .pago-icono {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 40px;
@@ -1474,6 +1481,7 @@ a.turno:hover {
 
 .confirmada-icono {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 72px;
@@ -1798,6 +1806,7 @@ a.turno:hover {
 
 .sin-reservas-icono {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 88px;
@@ -1914,4 +1923,315 @@ a.turno:hover {
 
 .boton-peligro:hover {
   background-color: #A61F1F;
+}
+
+
+/* ===== Responsive: tablet ===== */
+
+@media (max-width: 1024px) {
+
+  .navbar,
+  .hero,
+  .seccion,
+  .contenido,
+  .footer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .navbar-izquierda {
+    gap: 32px;
+  }
+
+  .navbar-links {
+    gap: 20px;
+  }
+
+  /* Landing */
+  .hero {
+    height: auto;
+    gap: 48px;
+  }
+
+  .hero-contenido,
+  .hero-contenido p,
+  .seccion-encabezado {
+    width: auto;
+  }
+
+  .grilla,
+  .pasos,
+  .testimonios {
+    flex-direction: column;
+  }
+
+  /* Listado */
+  .grilla-complejos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Login */
+  .login-panel {
+    display: none;
+  }
+
+  .login-area {
+    padding: 48px 24px;
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 440px;
+  }
+
+  /* Detalle */
+  .galeria {
+    flex-direction: column;
+  }
+
+  .galeria-principal {
+    height: 320px;
+  }
+
+  .galeria-secundarias {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .galeria-secundarias img {
+    width: 50%;
+    height: 180px;
+  }
+
+  .detalle-cuerpo,
+  .confirmar-cuerpo {
+    flex-direction: column;
+  }
+
+  .detalle-info,
+  .confirmar-principal,
+  .panel-reserva,
+  .resumen {
+    width: 100%;
+  }
+
+  /* Reserva confirmada */
+  .confirmada {
+    padding: 32px;
+  }
+
+  .confirmada-card {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  /* Modal */
+  .modal {
+    width: 90%;
+  }
+}
+
+
+/* ===== Responsive: celular ===== */
+
+@media (max-width: 640px) {
+
+  .navbar,
+  .hero,
+  .seccion,
+  .contenido,
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Navbar */
+  .navbar {
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .navbar-izquierda {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .navbar-links {
+    gap: 16px;
+  }
+
+  .usuario {
+    height: auto;
+    align-self: flex-start;
+  }
+
+  .usuario-boton span:nth-child(2) {
+    display: none;
+  }
+
+  .usuario-menu {
+    top: 100%;
+  }
+
+  /* Titulos */
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-contenido p {
+    font-size: 16px;
+  }
+
+  .seccion {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .encabezado-pagina h1,
+  .confirmar-encabezado h1,
+  .confirmada-top h1,
+  .login-form h1 {
+    font-size: 26px;
+  }
+
+  /* Buscador y filtros */
+  .busqueda,
+  .filtros {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .boton-buscar {
+    justify-content: center;
+  }
+
+  /* Listado */
+  .grilla-complejos {
+    grid-template-columns: 1fr;
+  }
+
+  /* Detalle */
+  .detalle-meta {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+
+  .galeria-principal {
+    height: 220px;
+  }
+
+  .galeria-secundarias img {
+    height: 120px;
+  }
+
+  .fila-cancha {
+    flex-wrap: wrap;
+  }
+
+  .fila-disp {
+    width: auto;
+  }
+
+  /* Confirmar */
+  .revision-fila {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .revision-label {
+    width: auto;
+  }
+
+  .confirmar-acciones {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .boton-volver,
+  .boton-confirmar {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Reserva confirmada */
+  .confirmada {
+    padding: 24px 16px;
+  }
+
+  .confirmada-top,
+  .confirmada-detalle {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .confirmada-acciones {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .resumen-fila {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .resumen-fila strong {
+    text-align: left;
+  }
+
+  /* Mis reservas */
+  .mis-reservas-encabezado {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .tabs {
+    gap: 12px;
+  }
+
+  .card-reserva {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .card-reserva-foto {
+    width: 100%;
+    height: 160px;
+  }
+
+  .card-reserva-top,
+  .card-reserva-meta {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+
+  .card-reserva-derecha {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .sin-reservas {
+    padding: 32px 16px;
+  }
+
+  .sin-reservas div {
+    width: auto;
+  }
+
+  /* Modal */
+  .modal-acciones {
+    flex-direction: column-reverse;
+  }
+
+  .modal-acciones .boton-borde {
+    text-align: center;
+  }
 }
